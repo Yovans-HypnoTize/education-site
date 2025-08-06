@@ -1,0 +1,3 @@
+Sitemap: https://edumaat.com/sitemap.xml.gz
+User-agent: *
+Allow: /

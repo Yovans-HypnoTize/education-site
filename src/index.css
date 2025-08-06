@@ -1,0 +1,7 @@
+html {
+  scroll-behavior: auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
