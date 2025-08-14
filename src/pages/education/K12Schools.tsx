@@ -2,18 +2,10 @@ import { Box, Grid, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import React from "react";
 import ReuOutlineBorderedButton from "../../components/common-reusable-components/ReuOutlineBorderedButton";
-
 import k12_headerImage from "../../assets/education/k12Images/k12_headerImage.png";
-import tickWhiteIcon from "../../assets/education/k12Images/tickWhiteIcon.png";
-import studentsImage from "../../assets/education/k12Images/studentsImage.png";
-import Cloud_Based_Icon from "../../assets/education/k12Images/Cloud_Based_Icon.png";
-import Governance_Grade_Compliance from "../../assets/education/k12Images/Governance_Grade_Compliance.png";
-import Multi_Institution_Oversight from "../../assets/education/k12Images/Multi_Institution_Oversight.png";
-
 import k12WhyChooseIcon1 from "../../assets/education/k12Images/k12WhyChooseIcon1.png";
 import k12WhyChooseIcon2 from "../../assets/education/k12Images/k12WhyChooseIcon2.png";
 import k12WhyChooseIcon3 from "../../assets/education/k12Images/k12WhyChooseIcon3.png";
-
 import LazyBoxImage from "../../components/LazyBoxImage";
 import CircleIcon from "@mui/icons-material/Circle";
 import ArrowBackIcon from "@mui/icons-material/KeyboardArrowLeft";
@@ -237,7 +229,7 @@ const K12Schools = () => {
         }}
       >
         <Grid container spacing={3}>
-          <Grid size={{ xs: 12, sm: 6 }} sx={{ pl: { xs: 5, lg: 10 } }}>
+          <Grid size={{ xs: 12, sm: 6 }} sx={{ pl: { xs: 2, sm: 5, lg: 10 } }}>
             <Box sx={{ mt: { xs: 2, sm: 5 } }}>
               <Typography
                 variant="h2"
@@ -507,7 +499,7 @@ const K12Schools = () => {
                 transform: `translateX(-${activeIndex * 100}%)`,
                 width: "100vw",
                 // width: `${carouselItems.length * 100}%`,
-                height: { sm: 520, md: 400, lg: 430 },
+                height: { sm: 550, md: 400, lg: 430 },
                 "@media (max-width: 525px)": {
                   height: 780,
                 },
@@ -574,7 +566,7 @@ const K12Schools = () => {
                           sx={{
                             fontWeight: 700,
                             mb: 2,
-                            fontSize: { xs: 14, lg: 18 },
+                            fontSize: { xs: 14, lg: 20 },
                           }}
                         >
                           {slideItem.content.title}
@@ -582,8 +574,8 @@ const K12Schools = () => {
                         <Typography
                           sx={{
                             fontWeight: 600,
-                            mb: 4,
-                            fontSize: { xs: 14 },
+                            mb: 3,
+                            fontSize: { xs: 14, sm: 16 },
                             letterSpacing: 0.5,
                           }}
                         >

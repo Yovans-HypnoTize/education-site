@@ -1,23 +1,16 @@
 import { Box, Grid, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import ReuOutlineBorderedButton from "../../components/common-reusable-components/ReuOutlineBorderedButton";
-
-import Cloud_Based_Icon from "../../assets/education/k12Images/Cloud_Based_Icon.png";
-import Governance_Grade_Compliance from "../../assets/education/k12Images/Governance_Grade_Compliance.png";
-import Multi_Institution_Oversight from "../../assets/education/k12Images/Multi_Institution_Oversight.png";
 import LazyBoxImage from "../../components/LazyBoxImage";
 import CircleIcon from "@mui/icons-material/Circle";
 import ArrowBackIcon from "@mui/icons-material/KeyboardArrowLeft";
 import ArrowForwardIcon from "@mui/icons-material/ChevronRight";
 import { useCarouselProgress } from "./hooks/useCarouselProgress";
-
 import university_headerImage from "../../assets/education/university/university_headerImage.png";
-import tabImage1 from "../../assets/education/university/tabImage1.jpg";
-import tabImage2 from "../../assets/education/university/tabImage2.jpg";
-import tabImage3 from "../../assets/education/university/tabImage3.jpg";
-import tabImage4 from "../../assets/education/university/tabImage4.jpg";
-import LazyImage from "../../components/LazyImage";
-
+import tabImage1 from "../../assets/education/university/tabImage1.svg";
+import tabImage2 from "../../assets/education/university/tabImage2.svg";
+import tabImage3 from "../../assets/education/university/tabImage3.svg";
+import tabImage4 from "../../assets/education/university/tabImage4.svg";
 import whyChooseIcon1 from "../../assets/education/university/universityWhyChooseIcon1.png";
 import whyChooseIcon2 from "../../assets/education/university/universityWhyChooseIcon2.png";
 import whyChooseIcon3 from "../../assets/education/university/universityWhyChooseIcon3.png";
@@ -271,7 +264,7 @@ const University = () => {
         }}
       >
         <Grid container>
-          <Grid size={{ xs: 12, sm: 6 }} sx={{ pl: { xs: 5, lg: 10 } }}>
+          <Grid size={{ xs: 12, sm: 6 }} sx={{ pl: {xs:2, sm: 5, lg: 10 } }}>
             <Box sx={{ mt: { xs: 2, md: 5 } }}>
               <Typography
                 variant="h2"
@@ -574,7 +567,7 @@ const University = () => {
                         pt: { xs: 3, sm: 5 },
                       }}
                     >
-                      <Typography fontSize={20} fontWeight={600} mb={2}>
+                      <Typography fontSize={20} fontWeight={700} mb={2}>
                         {slideItem.title}
                       </Typography>
                       {slideItem.content.subTitle.length > 0 && (
@@ -608,7 +601,7 @@ const University = () => {
                           </Box>
                         ))}
                       </Box>
-                      <Box sx={{ mt: { xs: 2, md: 5 }, ml: 1 }}>
+                      <Box sx={{ mt: { xs: 2, md: 5 }, ml: {md:1}, display:{xs:"flex",md:"block"}, justifyContent:{xs:"center", md:"flex-start"} }}>
                         <ReuOutlineBorderedButton
                           variant="outlined"
                           sx={{

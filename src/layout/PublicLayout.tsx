@@ -52,7 +52,7 @@ const PublicLayout = () => {
   const backdrop = useAppSelector((state) => state.auth.backdrop);
   return (
     <CardProvider>
-      {showAnnouncement && (
+      {/* {showAnnouncement && (
         <Box
           sx={{
             position: "fixed",
@@ -111,7 +111,7 @@ const PublicLayout = () => {
             />
           </Box>
         </Box>
-      )}
+      )} */}
       <BackdropLoader open={backdrop} />
       <TopNav />
       <Box sx={{ paddingTop: 10 }}>

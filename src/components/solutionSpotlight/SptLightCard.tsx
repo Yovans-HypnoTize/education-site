@@ -74,8 +74,8 @@ const SptLightCard: React.FC<SpotLightCardProps> = ({ items }) => {
                     {item.title}
                   </Typography>
                   <Typography sx={{ mt: 2 }}>{item.content}</Typography>
-                  {item?.points?.map((point) => (
-                    <Box sx={{ display: "flex" }}>
+                  {item?.points?.map((point, idx) => (
+                    <Box sx={{ display: "flex" }} key={`${point}_${idx}`}>
                       <FiberManualRecordIcon
                         sx={{ fontSize: 12, mr: 1, mt: 1 }}
                       />

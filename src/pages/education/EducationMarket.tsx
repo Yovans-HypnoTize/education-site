@@ -3,7 +3,8 @@ import K12Schools from "./K12Schools";
 import College from "./College";
 import University from "./University";
 import { Box, Typography } from "@mui/material";
-import EducationManagement from "./EducationManagement";
+import EducationBoards from "./EducationBoards";
+import CoachingCenter from "./CoachingCenter";
 
 const EducationMarket = () => {
   const { educationId } = useParams();
@@ -14,9 +15,9 @@ const EducationMarket = () => {
   } else if (educationId === "university") {
     return <University />;
   } else if (educationId === "education-boards") {
-    return <EducationManagement />;
+    return <EducationBoards />;
   } else if (educationId === "coaching") {
-    return <EducationManagement />;
+    return <CoachingCenter />;
   }
   return (
     <Box sx={{ px: 5, py: 10 }}>

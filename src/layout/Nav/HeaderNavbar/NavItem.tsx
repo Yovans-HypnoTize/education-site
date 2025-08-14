@@ -38,7 +38,7 @@ const NavItem: React.FC<NavItemProps> = ({ label, menuItem }) => {
       onMouseLeave={() => setHovered(false)}
       sx={{ position: "relative" }}
     >
-      <Typography
+      <Box
         sx={{
           display: "flex",
           bgcolor: "#ffffff",
@@ -80,7 +80,7 @@ const NavItem: React.FC<NavItemProps> = ({ label, menuItem }) => {
             />
           </Box>
         )}
-      </Typography>
+      </Box>
 
       {!isDirect && menuItem && hovered && (
         <Box

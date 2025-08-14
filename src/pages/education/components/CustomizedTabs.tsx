@@ -87,7 +87,7 @@ export default function StyledTabs({ tabData }: any) {
         sx={{
           background:
             " transparent linear-gradient(145deg, #FFFFFF 0%, #F1EFFC 100%) 0% 0% no-repeat padding-box",
-          height: 370,
+          height: {xs:580,sm:370},
         }}
       >
         {tabData.map((tab: any, index: number) => (
@@ -143,7 +143,7 @@ export default function StyledTabs({ tabData }: any) {
                             }}
                           />
                           <Typography
-                            sx={{ pl: 2, fontSize: 13, lineHeight: 2 }}
+                            sx={{ pl: 2, fontSize: 14, lineHeight: 2 }}
                           >
                             {point.label}
                           </Typography>

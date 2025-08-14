@@ -70,6 +70,90 @@ import cardImage_8 from "../assets/resource/cardImages/BlogPageImages/8.svg";
 import cardImage_9 from "../assets/resource/cardImages/BlogPageImages/9.svg";
 import cardImage_10 from "../assets/resource/cardImages/BlogPageImages/10.svg";
 
+import studentsbenefitsIcon1 from "../assets/mobile-apps/student/studentsbenefitsIcon1.png";
+import studentsbenefitsIcon2 from "../assets/mobile-apps/student/studentsbenefitsIcon2.png";
+import studentsbenefitsIcon3 from "../assets/mobile-apps/student/studentsbenefitsIcon3.png";
+import studentsbenefitsIcon4 from "../assets/mobile-apps/student/studentsbenefitsIcon4.png";
+import studentsbenefitsIcon5 from "../assets/mobile-apps/student/studentsbenefitsIcon5.png";
+
+import teacherbenefitsIcon1 from "../assets/mobile-apps/teacher/teacherbenefitsIcon1.png";
+import teacherbenefitsIcon2 from "../assets/mobile-apps/teacher/teacherbenefitsIcon2.png";
+import teacherbenefitsIcon3 from "../assets/mobile-apps/teacher/teacherbenefitsIcon3.png";
+import teacherbenefitsIcon4 from "../assets/mobile-apps/teacher/teacherbenefitsIcon4.png";
+import teacherbenefitsIcon5 from "../assets/mobile-apps/teacher/teacherbenefitsIcon5.png";
+import teacherbenefitsIcon6 from "../assets/mobile-apps/teacher/teacherbenefitsIcon6.png";
+
+import parentbenefitsIcon1 from "../assets/mobile-apps/parent/parentbenefitsIcon1.png";
+import parentbenefitsIcon2 from "../assets/mobile-apps/parent/parentbenefitsIcon2.png";
+import parentbenefitsIcon3 from "../assets/mobile-apps/parent/parentbenefitsIcon3.png";
+import parentbenefitsIcon4 from "../assets/mobile-apps/parent/parentbenefitsIcon4.png";
+import parentbenefitsIcon5 from "../assets/mobile-apps/parent/parentbenefitsIcon5.png";
+
+import adminbenefitsIcon1 from "../assets/mobile-apps/admin/adminbenefitsIcon1.png";
+import adminbenefitsIcon2 from "../assets/mobile-apps/admin/adminbenefitsIcon2.png";
+import adminbenefitsIcon3 from "../assets/mobile-apps/admin/adminbenefitsIcon3.png";
+import adminbenefitsIcon4 from "../assets/mobile-apps/admin/adminbenefitsIcon4.png";
+import adminbenefitsIcon5 from "../assets/mobile-apps/admin/adminbenefitsIcon5.png";
+import adminbenefitsIcon6 from "../assets/mobile-apps/admin/adminbenefitsIcon6.png";
+
+import student_ai_powered_feature_img from "../assets/mobile-apps/student/student_ai_powered_feature_img.png";
+import teacher_ai_powered_feature_img from "../assets/mobile-apps/teacher/teacher_ai_powered_feature_img.png";
+import parent_ai_powered_feature_img from "../assets/mobile-apps/parent/parent_ai_powered_feature_img.png";
+import admin_ai_powered_feature_img from "../assets/mobile-apps/admin/admin_ai_powered_feature_img.png";
+
+import studentImage from "../assets/mobile-apps/student/studentImage.png";
+import teacherImage from "../assets/mobile-apps/teacher/teacherImage.png";
+import parentImage from "../assets/mobile-apps/parent/parentImage.png";
+import adminImage from "../assets/mobile-apps/admin/adminImage.png";
+
+import student_vertical_tab_image from "../assets/mobile-apps/student/vertical_tab_image.png";
+import teacher_vertical_tab_image from "../assets/mobile-apps/teacher/vertical_tab_image.png";
+import parent_vertical_tab_image from "../assets/mobile-apps/parent/parent_vertical_tab_image.png";
+import admin_vertical_tab_image from "../assets/mobile-apps/admin/admin_vertical_tab_image.png";
+
+import headerTabBlueIcon1 from "../assets/mobile-apps/headerTabIcons/headerTabBlueIcon1.png";
+import headerTabBlueIcon2 from "../assets/mobile-apps/headerTabIcons/headerTabBlueIcon2.png";
+import headerTabBlueIcon3 from "../assets/mobile-apps/headerTabIcons/headerTabBlueIcon3.png";
+import headerTabBlueIcon4 from "../assets/mobile-apps/headerTabIcons/headerTabBlueIcon4.png";
+import headerTabIcon1 from "../assets/mobile-apps/headerTabIcons/headerTabIcon1.png";
+import headerTabIcon2 from "../assets/mobile-apps/headerTabIcons/headerTabIcon2.png";
+import headerTabIcon3 from "../assets/mobile-apps/headerTabIcons/headerTabIcon3.png";
+import headerTabIcon4 from "../assets/mobile-apps/headerTabIcons/headerTabIcon4.png";
+
+import student_vt_image1 from "../assets/mobile-apps/verticalTabImges/student_vertical_tab_images/student_vt_image1.svg"
+import student_vt_image2 from "../assets/mobile-apps/verticalTabImges/student_vertical_tab_images/student_vt_image2.svg"
+import student_vt_image3 from "../assets/mobile-apps/verticalTabImges/student_vertical_tab_images/student_vt_image3.svg"
+import student_vt_image4 from "../assets/mobile-apps/verticalTabImges/student_vertical_tab_images/student_vt_image4.svg"
+import student_vt_image5 from "../assets/mobile-apps/verticalTabImges/student_vertical_tab_images/student_vt_image5.svg"
+import student_vt_image6 from "../assets/mobile-apps/verticalTabImges/student_vertical_tab_images/student_vt_image6.svg"
+import student_vt_image7 from "../assets/mobile-apps/verticalTabImges/student_vertical_tab_images/student_vt_image7.svg"
+import student_vt_image8 from "../assets/mobile-apps/verticalTabImges/student_vertical_tab_images/student_vt_image8.svg"
+
+import teacher_vt_image1 from "../assets/mobile-apps/verticalTabImges/teacher_vertical_tab_images/teacher_vt_image1.svg"
+import teacher_vt_image2 from "../assets/mobile-apps/verticalTabImges/teacher_vertical_tab_images/teacher_vt_image2.svg"
+import teacher_vt_image3 from "../assets/mobile-apps/verticalTabImges/teacher_vertical_tab_images/teacher_vt_image3.svg"
+import teacher_vt_image4 from "../assets/mobile-apps/verticalTabImges/teacher_vertical_tab_images/teacher_vt_image4.svg"
+import teacher_vt_image5 from "../assets/mobile-apps/verticalTabImges/teacher_vertical_tab_images/teacher_vt_image5.svg"
+import teacher_vt_image6 from "../assets/mobile-apps/verticalTabImges/teacher_vertical_tab_images/teacher_vt_image6.svg"
+import teacher_vt_image7 from "../assets/mobile-apps/verticalTabImges/teacher_vertical_tab_images/teacher_vt_image7.svg"
+
+import parent_vt_image1 from "../assets/mobile-apps/verticalTabImges/parent_vertical_tab_images/parent_vt_image1.svg"
+import parent_vt_image2 from "../assets/mobile-apps/verticalTabImges/parent_vertical_tab_images/parent_vt_image2.svg"
+import parent_vt_image3 from "../assets/mobile-apps/verticalTabImges/parent_vertical_tab_images/parent_vt_image3.svg"
+import parent_vt_image4 from "../assets/mobile-apps/verticalTabImges/parent_vertical_tab_images/parent_vt_image4.svg"
+import parent_vt_image5 from "../assets/mobile-apps/verticalTabImges/parent_vertical_tab_images/parent_vt_image5.svg"
+import parent_vt_image6 from "../assets/mobile-apps/verticalTabImges/parent_vertical_tab_images/parent_vt_image6.svg"
+import parent_vt_image7 from "../assets/mobile-apps/verticalTabImges/parent_vertical_tab_images/parent_vt_image7.svg"
+
+import admin_vt_image1 from "../assets/mobile-apps/verticalTabImges/admin_vertical_tab_images/admin_vt_image1.svg"
+import admin_vt_image2 from "../assets/mobile-apps/verticalTabImges/admin_vertical_tab_images/admin_vt_image2.svg"
+import admin_vt_image3 from "../assets/mobile-apps/verticalTabImges/admin_vertical_tab_images/admin_vt_image3.svg"
+import admin_vt_image4 from "../assets/mobile-apps/verticalTabImges/admin_vertical_tab_images/admin_vt_image4.svg"
+import admin_vt_image5 from "../assets/mobile-apps/verticalTabImges/admin_vertical_tab_images/admin_vt_image5.svg"
+import admin_vt_image6 from "../assets/mobile-apps/verticalTabImges/admin_vertical_tab_images/admin_vt_image6.svg"
+import admin_vt_image7 from "../assets/mobile-apps/verticalTabImges/admin_vertical_tab_images/admin_vt_image7.svg"
+import admin_vt_image8 from "../assets/mobile-apps/verticalTabImges/admin_vertical_tab_images/admin_vt_image8.svg"
+
 export const edumaat_home_page_icons = {
   blueIcons: {
     AcademicBlueIcon,
@@ -149,4 +233,99 @@ export const blogCardImage = {
   cardImage_8,
   cardImage_9,
   cardImage_10,
+};
+
+export const mobileAppsHeaderTabImages = {
+  headerTabBlueIcon1,
+  headerTabBlueIcon2,
+  headerTabBlueIcon3,
+  headerTabBlueIcon4,
+  headerTabIcon1,
+  headerTabIcon2,
+  headerTabIcon3,
+  headerTabIcon4,
+};
+
+export const mobileAppsBenefitsIcons = {
+  studentsbenefitsIcon1,
+  studentsbenefitsIcon2,
+  studentsbenefitsIcon3,
+  studentsbenefitsIcon4,
+  studentsbenefitsIcon5,
+
+  teacherbenefitsIcon1,
+  teacherbenefitsIcon2,
+  teacherbenefitsIcon3,
+  teacherbenefitsIcon4,
+  teacherbenefitsIcon5,
+  teacherbenefitsIcon6,
+
+  parentbenefitsIcon1,
+  parentbenefitsIcon2,
+  parentbenefitsIcon3,
+  parentbenefitsIcon4,
+  parentbenefitsIcon5,
+
+  adminbenefitsIcon1,
+  adminbenefitsIcon2,
+  adminbenefitsIcon3,
+  adminbenefitsIcon4,
+  adminbenefitsIcon5,
+  adminbenefitsIcon6,
+};
+
+export const mobileAppsFeaturesImages = {
+  student_ai_powered_feature_img,
+  teacher_ai_powered_feature_img,
+  parent_ai_powered_feature_img,
+  admin_ai_powered_feature_img,
+};
+
+export const mobileAppsPurposeImages = {
+  studentImage,
+  teacherImage,
+  parentImage,
+  adminImage,
+};
+
+export const mobileAppsVerticalTabImages = {
+  student_vertical_tab_image,
+  teacher_vertical_tab_image,
+  parent_vertical_tab_image,
+  admin_vertical_tab_image,
+
+  student_vt_image1,
+  student_vt_image2,
+  student_vt_image3,
+  student_vt_image4,
+  student_vt_image5,
+  student_vt_image6,
+  student_vt_image7,
+  student_vt_image8,
+
+  teacher_vt_image1,
+  teacher_vt_image2,
+  teacher_vt_image3,
+  teacher_vt_image4,
+  teacher_vt_image5,
+  teacher_vt_image6,
+  teacher_vt_image7,
+
+  parent_vt_image1,
+  parent_vt_image2,
+  parent_vt_image3,
+  parent_vt_image4,
+  parent_vt_image5,
+  parent_vt_image6,
+  parent_vt_image7,
+
+  admin_vt_image1,
+  admin_vt_image2,
+  admin_vt_image3,
+  admin_vt_image4,
+  admin_vt_image5,
+  admin_vt_image6,
+  admin_vt_image7,
+  admin_vt_image8,
+
 };

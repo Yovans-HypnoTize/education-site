@@ -2,11 +2,6 @@ import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import CustomizedTabs from "./components/CustomizedTabs";
-// import whyChooseIcon1 from "../../assets/education/collage/whyChooseIcon1.png";
-// import whyChooseIcon2 from "../../assets/education/collage/whyChooseIcon2.png";
-// import whyChooseIcon3 from "../../assets/education/collage/whyChooseIcon3.png";
-// import whyChooseIcon4 from "../../assets/education/collage/whyChooseIcon4.png";
-
 import collageWhyChooseIcon1 from "../../assets/education/collage/collageWhyChooseIcon1.png";
 import collageWhyChooseIcon2 from "../../assets/education/collage/collageWhyChooseIcon2.png";
 import collageWhyChooseIcon3 from "../../assets/education/collage/collageWhyChooseIcon3.png";
@@ -240,7 +235,7 @@ const College = () => {
         }}
       >
         <Grid container>
-          <Grid size={{ xs: 12, sm: 6 }} sx={{ pl: { xs: 5, lg: 10 } }}>
+          <Grid size={{ xs: 12, sm: 6 }} sx={{ pl: {xs:2, sm: 5, lg: 10 } }}>
             <Box sx={{ mt: { xs: 2, md: 5 } }}>
               <Typography
                 variant="h2"

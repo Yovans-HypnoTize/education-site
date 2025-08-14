@@ -383,29 +383,32 @@ const Blogs = () => {
                   />
                 </Grid>
               </Grid>
-              <Box
-                sx={{
-                  mt: 5,
-                  display: "flex",
-                  justifyContent: "center",
-                  "&:hover": {
-                    cursor: "pointer",
-                  },
-                }}
-                onClick={() => setLoadMore(!loadMore)}
-              >
-                <Typography>
-                  {loadMore ? (
-                    <Box
-                      component={"span"}
-                      sx={{ textDecoration: "underline" }}
-                    >
-                      Load less
-                    </Box>
-                  ) : (
-                    " Load More..."
-                  )}
-                </Typography>
+              <Box sx={{ display: "flex", justifyContent: "center" }}>
+                <Box
+                  sx={{
+                    px: 3,
+                    py: 1,
+                    border: 1,
+                    borderColor: "gray",
+                    borderRadius: 5,
+                    mt: 5,
+                    display: "flex",
+                    justifyContent: "center",
+                    "&:hover": {
+                      cursor: "pointer",
+                      bgcolor: "rgba(229, 228, 226, 0.4)",
+                    },
+                  }}
+                  onClick={() => setLoadMore(!loadMore)}
+                >
+                  <Typography>
+                    {loadMore ? (
+                      <Box component={"span"}>Load less</Box>
+                    ) : (
+                      " Load More..."
+                    )}
+                  </Typography>
+                </Box>
               </Box>
             </Box>
           </section>

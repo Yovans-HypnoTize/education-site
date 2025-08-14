@@ -10,6 +10,7 @@ body,
   src: url("./assets/fonts/ZohoPuvi-Thin.otf") format("opentype");
   font-weight: 100;
   font-style: normal;
+  font-display: swap
 }
 
 @font-face {
@@ -17,6 +18,7 @@ body,
   src: url("./assets/fonts/ZohoPuvi-ExtraLight.otf") format("opentype");
   font-weight: 200;
   font-style: normal;
+  font-display: swap
 }
 
 @font-face {
@@ -24,6 +26,7 @@ body,
   src: url("./assets/fonts/ZohoPuvi-Light.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
+  font-display: swap
 }
 
 @font-face {
@@ -31,6 +34,7 @@ body,
   src: url("./assets/fonts/ZohoPuvi-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
+  font-display: swap
 }
 
 @font-face {
@@ -38,6 +42,7 @@ body,
   src: url("./assets/fonts/ZohoPuvi-RegularItalic.otf") format("opentype");
   font-weight: 400;
   font-style: italic;
+  font-display: swap
 }
 
 @font-face {
@@ -45,6 +50,7 @@ body,
   src: url("./assets/fonts/ZohoPuvi-Medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -52,6 +58,7 @@ body,
   src: url("./assets/fonts/ZohoPuvi-SemiBold.otf") format("opentype");
   font-weight: 600;
   font-style: normal;
+  font-display: swap
 }
 
 @font-face {
@@ -59,6 +66,7 @@ body,
   src: url("./assets/fonts/ZohoPuvi-SemiBoldItalic.otf") format("opentype");
   font-weight: 600;
   font-style: italic;
+  font-display: swap
 }
 
 @font-face {
@@ -66,6 +74,7 @@ body,
   src: url("./assets/fonts/ZohoPuvi-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
+  font-display: swap
 }
 
 @font-face {
@@ -73,6 +82,7 @@ body,
   src: url("./assets/fonts/ZohoPuvi-BoldItalic.otf") format("opentype");
   font-weight: 700;
   font-style: italic;
+  font-display: swap
 }
 
 @font-face {
@@ -80,6 +90,7 @@ body,
   src: url("./assets/fonts/ZohoPuvi-ExtraBold.otf") format("opentype");
   font-weight: 800;
   font-style: normal;
+  font-display: swap
 }
 
 @font-face {
@@ -87,6 +98,7 @@ body,
   src: url("./assets/fonts/ZohoPuvi-ExtraBlack.otf") format("opentype");
   font-weight: 900;
   font-style: normal;
+  font-display: swap
 }
 
 @font-face {
@@ -94,6 +106,7 @@ body,
   src: url("./assets/fonts/ZohoPuvi-Black.otf") format("opentype");
   font-weight: 950;
   font-style: normal;
+  font-display: swap
 }
 
 /* @font-face {
@@ -185,15 +198,15 @@ body,
   }
 }
 
-.home-dashboard-samples-imgs-section {
+/* .home-dashboard-samples-imgs-section {
   margin-top: 2%;
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .home-dashboard-samples-imgs-section {
     padding: 20px;
   }
-}
+} */
 
 .home-dashboard-samples-img {
   aspect-ratio: 3 / 2;
@@ -321,10 +334,10 @@ body,
   }
 }
 
-.featured-awaited-card-img {
+/* .featured-awaited-card-img {
   height: 180px;
   width: 100%;
-}
+} */
 
 .footer {
   padding: 40px 20px;
@@ -361,7 +374,7 @@ body,
   }
 }
 
-.full-width-wire {
+/* .full-width-wire {
   width: 100vw;
   max-width: 100%;
   display: block;
@@ -369,7 +382,7 @@ body,
   height: 300px;
   z-index: -2;
   position: relative;
-}
+} */
 
 .features-section {
   text-align: center;
@@ -534,11 +547,11 @@ body,
   margin-bottom: 15px;
 }
 
-.service-subtitle {
+/* .service-subtitle {
   font-size: 13px;
   color: #6b7280;
   margin: 0;
-}
+} */
 
 .about-container {
   display: flex;
@@ -554,7 +567,7 @@ body,
   }
 }
 
-.about-video-img {
+/* .about-video-img {
   z-index: 4;
   position: absolute;
   bottom: "50%";
@@ -581,7 +594,7 @@ body,
     width: 220px;
     margin-top: 48%;
   }
-}
+} */
 
 .contact-container {
   display: flex;
@@ -590,7 +603,7 @@ body,
   gap: 2rem;
   padding: 2rem;
   flex-wrap: wrap;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .contact-left {
@@ -983,11 +996,11 @@ body,
   background-size: cover;
 }
 
-.college_whyChooseBgImage {
+/* .college_whyChooseBgImage {
   background: url("./assets/education/collage/whyChooseBgImage.png") no-repeat
     center center;
   background-size: cover;
-}
+} */
 
 .university_header_bg {
   background: url("./assets/education/university/University_header_bg_img.png")
@@ -1007,14 +1020,41 @@ body,
   background-size: contain;
 }
 
-.education_boards_header_bg {
+/* .education_boards_header_bg {
   background: url("./assets/education/education_boards/education_boards_header_bg.png")
+    no-repeat center center;
+  background-size: cover;
+} */
+
+/* .education_board_header_btn {
+  background: url("./assets/education/education_boards/book_now_btn_bg.png")
+    no-repeat center center;
+  background-size: cover;
+} */
+
+.coaching_GridImage1bg {
+  background: url("./assets/education/coaching/GridImage1bg.svg")
+    no-repeat center center;
+  background-size: cover;
+}
+.coaching_GridImage2bg {
+  background: url("./assets/education/coaching/GridImage2bg.svg")
+    no-repeat center center;
+  background-size: cover;
+}
+.coaching_GridImage3bg {
+  background: url("./assets/education/coaching/GridImage3bg.svg")
+    no-repeat center center;
+  background-size: cover;
+}
+.coaching_GridImage4bg {
+  background: url("./assets/education/coaching/GridImage4bg.svg")
     no-repeat center center;
   background-size: cover;
 }
 
-.education_board_header_btn {
-  background: url("./assets/education/education_boards/book_now_btn_bg.png")
+.mobile_apps_header_card_bgGradient {
+  background: url("./assets/mobile-apps/mobile_apps_header_card_bg.svg")
     no-repeat center center;
   background-size: cover;
 }

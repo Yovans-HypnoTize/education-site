@@ -61,7 +61,7 @@ const SolutionSpotlightNavItem: React.FC<NavItemProps> = ({
       onMouseLeave={() => setHovered(false)}
       sx={{ position: "relative" }}
     >
-      <Typography
+      <Box
         sx={{
           display: "flex",
           textTransform: "none",
@@ -95,7 +95,7 @@ const SolutionSpotlightNavItem: React.FC<NavItemProps> = ({
             <KeyboardArrowDownIcon fontSize="inherit" sx={{ color: "#000" }} />
           </Box>
         )}
-      </Typography>
+      </Box>
 
       {menuItem && hovered && (
         <Box

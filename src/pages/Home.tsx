@@ -1,30 +1,22 @@
-import ReuButton from "../components/ReuButton";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Box, Card, Typography, Grid, IconButton, Avatar } from "@mui/material";
-import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
+import { Box, Card, Typography, Grid, Avatar } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-
 import { SmartCampusCards } from "./about/Testimonials";
+import ReuButton from "../components/ReuButton";
 import ReuGradientButton from "../components/common-reusable-components/ReuGradientButton";
-import ReuPlanCards from "../components/common-reusable-components/ReuPlanCards";
 import PartnersSlider from "../components/PartnersSlider";
 import StatesCount from "../components/StatesCount";
-import ReuOutlineBorderedButton from "../components/common-reusable-components/ReuOutlineBorderedButton";
-
-import overallImages from "../assets/Group 68.png";
+import LazyImage from "../components/LazyImage";
+import LazyBoxImage from "../components/LazyBoxImage";
+import HomeCard from "../components/HomeCard";
+import HomeFeatureGrid from "../components/HomeFeatureGrid";
+import ReuAccordion from "../components/plans-pricing-components/ReuAccordion";
 import mainImage4 from "../assets/home/university_image.svg";
 import testimonial_Islamic_Welfare_Society from "../assets/testimonial/Islamic-Welfare-Society.jpg";
 import testimonial_Jaya_Vasavi_Mstriculation from "../assets/testimonial/Jaya-Vasavi-Mstriculation-School.png";
 import testimonial_Reserve_Bank_School from "../assets/testimonial/Reserve-Bank-Schoo,..png";
 import testimonial_tirukkoilur_college from "../assets/testimonial/tirukkoilur-college-of-arts-science-villupuram.jpg";
-import admmissionImage from "../assets/home/admission_management.jpg";
-import stafftImage from "../assets/home/staff_management.jpg";
-import requisitionImage from "../assets/home/requisition_approval.jpg";
-import learningImage from "../assets/home/learning_management_system.jpg";
-import feesImage from "../assets/home/fees_management.jpg";
-import attendanceImage from "../assets/home/attendance_management.jpg";
 import custom_core_image from "../assets/home/Customizable_Core_icon.png";
 import aws_image from "../assets/home/aws_icon.png";
 import saas_image from "../assets/home/saas_icon.png";
@@ -34,75 +26,80 @@ import Actionable_Insights_Image from "../assets/home/RobotImages/ActionableInsi
 import AI_powered_education_platform from "../assets/home/RobotImages/CreatewithAIImage.png";
 import Make_Informed_Decisions_Faster from "../assets/home/RobotImages/MakeInformedAndDecisionFasterImage.png";
 import download_our_app_image from "../assets/home/download_app_image.png";
-import cardImage_1 from "../assets/resource/cardImages/cardImage_1.png";
-import cardImage_2 from "../assets/resource/cardImages/cardImage_2.png";
-import cardImage_3 from "../assets/resource/cardImages/cardImage_3.png";
-import cardImage_4 from "../assets/resource/cardImages/cardImage_4.png";
-import QueriesAccordion from "../components/plans-pricing-components/QueriesAccordion";
-import faqPersonImage from "../assets/plans-pricing/faqPersonImage.png";
-import LazyImage from "../components/LazyImage";
-import LazyBoxImage from "../components/LazyBoxImage";
-import HomeCard from "../components/HomeCard";
-
-import Home_page_day_attendance from "../assets/home/Home_page_day_attendance.png";
-import HomeFeatureGrid from "../components/HomeFeatureGrid";
-import ReuAccordion from "../components/plans-pricing-components/ReuAccordion";
 import { blogCardImage } from "../utils/ImageContainer";
+// import admmissionImage from "../assets/home/admission_management.jpg";
+// import stafftImage from "../assets/home/staff_management.jpg";
+// import requisitionImage from "../assets/home/requisition_approval.jpg";
+// import learningImage from "../assets/home/learning_management_system.jpg";
+// import feesImage from "../assets/home/fees_management.jpg";
+// import attendanceImage from "../assets/home/attendance_management.jpg";
+// import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+// import overallImages from "../assets/Group 68.png";
+// import ReuOutlineBorderedButton from "../components/common-reusable-components/ReuOutlineBorderedButton";
+// import ReuPlanCards from "../components/common-reusable-components/ReuPlanCards";
+// import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
+// import cardImage_1 from "../assets/resource/cardImages/cardImage_1.png";
+// import cardImage_2 from "../assets/resource/cardImages/cardImage_2.png";
+// import cardImage_3 from "../assets/resource/cardImages/cardImage_3.png";
+// import cardImage_4 from "../assets/resource/cardImages/cardImage_4.png";
+// import QueriesAccordion from "../components/plans-pricing-components/QueriesAccordion";
+// import faqPersonImage from "../assets/plans-pricing/faqPersonImage.png";
+// import Home_page_day_attendance from "../assets/home/Home_page_day_attendance.png";
 
-const cards = [
-  {
-    path: "/academic/admission-management",
-    parentId: "academic",
-    title: "Admission Management",
-    imgSrc: admmissionImage,
-    alt: "Illustration showing admission management",
-    containerColor: "linear-gradient(135deg,rgb(244, 82, 82), #FDB469)",
-  },
-  {
-    path: "/human-resource-administration/staff-management",
-    parentId: "human-resource-administration",
-    title: "Staff Management",
-    imgSrc: stafftImage,
-    alt: "Illustration showing staff management",
-    containerColor:
-      "linear-gradient(135deg,rgb(247, 70, 140),rgb(168, 63, 225))",
-  },
-  {
-    path: "/human-resource-administration/requisition-and-approval-management",
-    parentId: "human-resource-administration",
-    title: "Requisition & Approval",
-    imgSrc: requisitionImage,
-    alt: "Illustration showing requistion and approval",
-    containerColor:
-      "linear-gradient(135deg,rgb(154, 190, 225),rgb(160, 62, 246))",
-  },
-  {
-    path: "/finance/fees-management",
-    parentId: "finance",
-    title: "Fees Management",
-    imgSrc: feesImage,
-    alt: "Illustration showing fees management",
-    containerColor: "linear-gradient(135deg,rgb(243, 74, 141), #C04DFF)",
-  },
-  {
-    path: "/academic/lms-quiz-course-interactive-meeting",
-    parentId: "academic",
-    title: "Learning Management System",
-    imgSrc: learningImage,
-    alt: "Illustration showing learning management",
-    containerColor:
-      "linear-gradient(135deg,rgb(88, 152, 217),rgb(127, 80, 167))",
-  },
-  {
-    path: "/academic/attendance-management",
-    parentId: "academic",
-    title: "Attendance  Management",
-    imgSrc: attendanceImage,
-    alt: "Illustration showing attendance management",
-    containerColor:
-      "linear-gradient(135deg,rgb(137, 178, 220),rgb(122, 46, 188))",
-  },
-];
+// const cards = [
+//   {
+//     path: "/academic/admission-management",
+//     parentId: "academic",
+//     title: "Admission Management",
+//     imgSrc: admmissionImage,
+//     alt: "Illustration showing admission management",
+//     containerColor: "linear-gradient(135deg,rgb(244, 82, 82), #FDB469)",
+//   },
+//   {
+//     path: "/human-resource-administration/staff-management",
+//     parentId: "human-resource-administration",
+//     title: "Staff Management",
+//     imgSrc: stafftImage,
+//     alt: "Illustration showing staff management",
+//     containerColor:
+//       "linear-gradient(135deg,rgb(247, 70, 140),rgb(168, 63, 225))",
+//   },
+//   {
+//     path: "/human-resource-administration/requisition-and-approval-management",
+//     parentId: "human-resource-administration",
+//     title: "Requisition & Approval",
+//     imgSrc: requisitionImage,
+//     alt: "Illustration showing requistion and approval",
+//     containerColor:
+//       "linear-gradient(135deg,rgb(154, 190, 225),rgb(160, 62, 246))",
+//   },
+//   {
+//     path: "/finance/fees-management",
+//     parentId: "finance",
+//     title: "Fees Management",
+//     imgSrc: feesImage,
+//     alt: "Illustration showing fees management",
+//     containerColor: "linear-gradient(135deg,rgb(243, 74, 141), #C04DFF)",
+//   },
+//   {
+//     path: "/academic/lms-quiz-course-interactive-meeting",
+//     parentId: "academic",
+//     title: "Learning Management System",
+//     imgSrc: learningImage,
+//     alt: "Illustration showing learning management",
+//     containerColor:
+//       "linear-gradient(135deg,rgb(88, 152, 217),rgb(127, 80, 167))",
+//   },
+//   {
+//     path: "/academic/attendance-management",
+//     parentId: "academic",
+//     title: "Attendance  Management",
+//     imgSrc: attendanceImage,
+//     alt: "Illustration showing attendance management",
+//     containerColor:
+//       "linear-gradient(135deg,rgb(137, 178, 220),rgb(122, 46, 188))",
+//   },
+// ];
 
 const smartCampusCards: SmartCampusCards[] = [
   {
@@ -244,25 +241,25 @@ const features = [
   },
 ];
 
-const responsive = {
-  bigDesktop: {
-    breakpoint: { max: 3000, min: 1440 },
-    items: 4,
-  },
-  desktop: {
-    breakpoint: { max: 1439, min: 1024 },
-    items: 4,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-    partialVisibilityGutter: 40,
-  },
-};
+// const responsive = {
+//   bigDesktop: {
+//     breakpoint: { max: 3000, min: 1440 },
+//     items: 4,
+//   },
+//   desktop: {
+//     breakpoint: { max: 1439, min: 1024 },
+//     items: 4,
+//   },
+//   tablet: {
+//     breakpoint: { max: 1024, min: 464 },
+//     items: 2,
+//   },
+//   mobile: {
+//     breakpoint: { max: 464, min: 0 },
+//     items: 1,
+//     partialVisibilityGutter: 40,
+//   },
+// };
 
 const responsiveCardCarousel = {
   desktop: {
@@ -299,49 +296,49 @@ const responsiveCardCarouselForDiscoverDifference = {
   },
 };
 
-const faqAccordionItems = [
-  {
-    id: 1,
-    title: "What is Edumaat and how can it help our school or college?",
-    content:
-      "Edumaat is a software that helps manage school or college work like attendance, exams, fees, and more. It saves time and makes everything easier and faster.",
-    points: [],
-    subTitle: "",
-  },
-  {
-    id: 2,
-    title: "Can we change Edumaat to match how our school works?",
-    content:
-      "Yes, Edumaat can be changed to fit your school’s rules and way of working.",
-    points: [],
-    subTitle: "",
-  },
-  {
-    id: 3,
-    title: "Is our data safe in Edumaat?",
-    content:
-      "Yes, your data is safe. Edumaat uses strong security to keep your information private and protected.",
-    points: [],
-    subTitle: "",
-  },
-  {
-    id: 4,
-    title:
-      "Can Edumaat work with other systems like fingerprint attendance or online payments?",
-    content:
-      "Yes, Edumaat can connect with systems like fingerprint machines, online payment apps, and more.",
-    points: [],
-    subTitle: "",
-  },
-  {
-    id: 5,
-    title: "Will we get help in using Edumaat?",
-    content:
-      "Yes, Edumaat gives full training and support to help you and your team use the system easily.",
-    points: [],
-    subTitle: "",
-  },
-];
+// const faqAccordionItems = [
+//   {
+//     id: 1,
+//     title: "What is Edumaat and how can it help our school or college?",
+//     content:
+//       "Edumaat is a software that helps manage school or college work like attendance, exams, fees, and more. It saves time and makes everything easier and faster.",
+//     points: [],
+//     subTitle: "",
+//   },
+//   {
+//     id: 2,
+//     title: "Can we change Edumaat to match how our school works?",
+//     content:
+//       "Yes, Edumaat can be changed to fit your school’s rules and way of working.",
+//     points: [],
+//     subTitle: "",
+//   },
+//   {
+//     id: 3,
+//     title: "Is our data safe in Edumaat?",
+//     content:
+//       "Yes, your data is safe. Edumaat uses strong security to keep your information private and protected.",
+//     points: [],
+//     subTitle: "",
+//   },
+//   {
+//     id: 4,
+//     title:
+//       "Can Edumaat work with other systems like fingerprint attendance or online payments?",
+//     content:
+//       "Yes, Edumaat can connect with systems like fingerprint machines, online payment apps, and more.",
+//     points: [],
+//     subTitle: "",
+//   },
+//   {
+//     id: 5,
+//     title: "Will we get help in using Edumaat?",
+//     content:
+//       "Yes, Edumaat gives full training and support to help you and your team use the system easily.",
+//     points: [],
+//     subTitle: "",
+//   },
+// ];
 
 const edumaatFaqData = [
   {
@@ -480,317 +477,317 @@ const SmartCampusCardItem = ({ card, idx }: { card: any; idx: number }) => {
 const Home = () => {
   const navigate = useNavigate();
 
-  const handlePlansNavigation = (path: string, parentId: string) => {
-    navigate(path, { state: parentId });
-  };
+  // const handlePlansNavigation = (path: string, parentId: string) => {
+  //   navigate(path, { state: parentId });
+  // };
 
   const handleBookFreeDemo = () => {
     navigate("/enquiry");
   };
 
-  const plans = [
-    {
-      id: 1,
-      title: "EDUMAAT Starter",
-      description:
-        "Designed for small institutions to begin their digital journey",
-      description2: "Offer:  30 Days Free Access",
-      buttonText: "Get Free Access",
-      highlight: false,
-      cardBodyContent: {
-        heading: "",
-        points: [
-          { id: 1, renderContent: "Free Demo" },
-          { id: 2, renderContent: "Free Access to all  Modules" },
-          { id: 3, renderContent: "AWS Cloud Hosting" },
-          { id: 4, renderContent: "Mobile App (Starter)" },
-          { id: 5, renderContent: "Free Installation" },
-        ],
-      },
-    },
-    {
-      id: 2,
-      title: "EDUMAAT Smarter",
-      description:
-        "For institutions looking to automate and integrate key systems",
-      description2: "Everything in Starter, plus:",
-      buttonText: "Get Smarter Quote",
-      highlight: true,
-      cardBodyContent: {
-        heading: "Access to All Basic Modules +",
-        points: [
-          {
-            id: 1,
-            renderContent: (
-              <Box>
-                Integration with Biometric, RFID, Email, SMS, Payment Gateway{" "}
-                <Box
-                  component={"span"}
-                  onClick={() =>
-                    handlePlansNavigation(
-                      "/ai-automation/integration-payment-gateway-whatsapp-email",
-                      "ai-automation"
-                    )
-                  }
-                >
-                  <OpenInNewIcon
-                    sx={{
-                      height: 14,
-                      width: 14,
-                      "&:hover": {
-                        cursor: "pointer",
-                      },
-                    }}
-                  />
-                </Box>
-              </Box>
-            ),
-          },
-          {
-            id: 2,
-            renderContent: (
-              <Box>
-                Website Integration
-                <Box
-                  component={"span"}
-                  onClick={() => handlePlansNavigation("/", "")}
-                >
-                  <OpenInNewIcon
-                    sx={{
-                      height: 14,
-                      width: 14,
-                      ml: 0.5,
-                      "&:hover": {
-                        cursor: "pointer",
-                      },
-                    }}
-                  />
-                </Box>
-              </Box>
-            ),
-          },
-          {
-            id: 3,
-            renderContent: (
-              <Box>
-                Data Migration
-                <Box
-                  component={"span"}
-                  onClick={() => handlePlansNavigation("/", "")}
-                >
-                  <OpenInNewIcon
-                    sx={{
-                      height: 14,
-                      width: 14,
-                      ml: 0.5,
-                      "&:hover": {
-                        cursor: "pointer",
-                      },
-                    }}
-                  />
-                </Box>
-              </Box>
-            ),
-          },
-          { id: 4, renderContent: "End-to-End Training" },
-          { id: 5, renderContent: "Free Installation" },
-          { id: 6, renderContent: "Mobile App (Smarter)" },
-          { id: 7, renderContent: "Free Backup & Server Maintenance" },
-          { id: 8, renderContent: "24x7 Support" },
-        ],
-      },
-    },
-    {
-      id: 3,
-      title: "EDUMAAT Ultimate",
-      description:
-        "Built for large institutions needing complete digital control",
-      description2: "Everything in Smarter, plus:",
-      buttonText: "Get a Ultimate Quote",
-      highlight: true,
-      cardBodyContent: {
-        heading: "Full Access to All 42 Modules +",
-        points: [
-          { id: 1, renderContent: "Access to All Modules" },
-          {
-            id: 2,
-            renderContent: (
-              <Box>
-                Integration with Biometric, RFID, Email, SMS, Payment Gateway{" "}
-                <Box
-                  component={"span"}
-                  onClick={() =>
-                    handlePlansNavigation(
-                      "/ai-automation/integration-payment-gateway-whatsapp-email",
-                      "ai-automation"
-                    )
-                  }
-                >
-                  <OpenInNewIcon
-                    sx={{
-                      height: 14,
-                      width: 14,
-                      "&:hover": {
-                        cursor: "pointer",
-                      },
-                    }}
-                  />
-                </Box>
-              </Box>
-            ),
-          },
-          {
-            id: 3,
-            renderContent: (
-              <Box>
-                Website Integration
-                <Box
-                  component={"span"}
-                  onClick={() => handlePlansNavigation("/", "")}
-                >
-                  <OpenInNewIcon
-                    sx={{
-                      height: 14,
-                      width: 14,
-                      ml: 0.5,
-                      "&:hover": {
-                        cursor: "pointer",
-                      },
-                    }}
-                  />
-                </Box>
-              </Box>
-            ),
-          },
-          {
-            id: 4,
-            renderContent: (
-              <Box>
-                Data Migration
-                <Box
-                  component={"span"}
-                  onClick={() => handlePlansNavigation("/", "")}
-                >
-                  <OpenInNewIcon
-                    sx={{
-                      height: 14,
-                      width: 14,
-                      ml: 0.5,
-                      "&:hover": {
-                        cursor: "pointer",
-                      },
-                    }}
-                  />
-                </Box>
-              </Box>
-            ),
-          },
+  // const plans = [
+  //   {
+  //     id: 1,
+  //     title: "EDUMAAT Starter",
+  //     description:
+  //       "Designed for small institutions to begin their digital journey",
+  //     description2: "Offer:  30 Days Free Access",
+  //     buttonText: "Get Free Access",
+  //     highlight: false,
+  //     cardBodyContent: {
+  //       heading: "",
+  //       points: [
+  //         { id: 1, renderContent: "Free Demo" },
+  //         { id: 2, renderContent: "Free Access to all  Modules" },
+  //         { id: 3, renderContent: "AWS Cloud Hosting" },
+  //         { id: 4, renderContent: "Mobile App (Starter)" },
+  //         { id: 5, renderContent: "Free Installation" },
+  //       ],
+  //     },
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "EDUMAAT Smarter",
+  //     description:
+  //       "For institutions looking to automate and integrate key systems",
+  //     description2: "Everything in Starter, plus:",
+  //     buttonText: "Get Smarter Quote",
+  //     highlight: true,
+  //     cardBodyContent: {
+  //       heading: "Access to All Basic Modules +",
+  //       points: [
+  //         {
+  //           id: 1,
+  //           renderContent: (
+  //             <Box>
+  //               Integration with Biometric, RFID, Email, SMS, Payment Gateway{" "}
+  //               <Box
+  //                 component={"span"}
+  //                 onClick={() =>
+  //                   handlePlansNavigation(
+  //                     "/ai-automation/integration-payment-gateway-whatsapp-email",
+  //                     "ai-automation"
+  //                   )
+  //                 }
+  //               >
+  //                 <OpenInNewIcon
+  //                   sx={{
+  //                     height: 14,
+  //                     width: 14,
+  //                     "&:hover": {
+  //                       cursor: "pointer",
+  //                     },
+  //                   }}
+  //                 />
+  //               </Box>
+  //             </Box>
+  //           ),
+  //         },
+  //         {
+  //           id: 2,
+  //           renderContent: (
+  //             <Box>
+  //               Website Integration
+  //               <Box
+  //                 component={"span"}
+  //                 onClick={() => handlePlansNavigation("/", "")}
+  //               >
+  //                 <OpenInNewIcon
+  //                   sx={{
+  //                     height: 14,
+  //                     width: 14,
+  //                     ml: 0.5,
+  //                     "&:hover": {
+  //                       cursor: "pointer",
+  //                     },
+  //                   }}
+  //                 />
+  //               </Box>
+  //             </Box>
+  //           ),
+  //         },
+  //         {
+  //           id: 3,
+  //           renderContent: (
+  //             <Box>
+  //               Data Migration
+  //               <Box
+  //                 component={"span"}
+  //                 onClick={() => handlePlansNavigation("/", "")}
+  //               >
+  //                 <OpenInNewIcon
+  //                   sx={{
+  //                     height: 14,
+  //                     width: 14,
+  //                     ml: 0.5,
+  //                     "&:hover": {
+  //                       cursor: "pointer",
+  //                     },
+  //                   }}
+  //                 />
+  //               </Box>
+  //             </Box>
+  //           ),
+  //         },
+  //         { id: 4, renderContent: "End-to-End Training" },
+  //         { id: 5, renderContent: "Free Installation" },
+  //         { id: 6, renderContent: "Mobile App (Smarter)" },
+  //         { id: 7, renderContent: "Free Backup & Server Maintenance" },
+  //         { id: 8, renderContent: "24x7 Support" },
+  //       ],
+  //     },
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "EDUMAAT Ultimate",
+  //     description:
+  //       "Built for large institutions needing complete digital control",
+  //     description2: "Everything in Smarter, plus:",
+  //     buttonText: "Get a Ultimate Quote",
+  //     highlight: true,
+  //     cardBodyContent: {
+  //       heading: "Full Access to All 42 Modules +",
+  //       points: [
+  //         { id: 1, renderContent: "Access to All Modules" },
+  //         {
+  //           id: 2,
+  //           renderContent: (
+  //             <Box>
+  //               Integration with Biometric, RFID, Email, SMS, Payment Gateway{" "}
+  //               <Box
+  //                 component={"span"}
+  //                 onClick={() =>
+  //                   handlePlansNavigation(
+  //                     "/ai-automation/integration-payment-gateway-whatsapp-email",
+  //                     "ai-automation"
+  //                   )
+  //                 }
+  //               >
+  //                 <OpenInNewIcon
+  //                   sx={{
+  //                     height: 14,
+  //                     width: 14,
+  //                     "&:hover": {
+  //                       cursor: "pointer",
+  //                     },
+  //                   }}
+  //                 />
+  //               </Box>
+  //             </Box>
+  //           ),
+  //         },
+  //         {
+  //           id: 3,
+  //           renderContent: (
+  //             <Box>
+  //               Website Integration
+  //               <Box
+  //                 component={"span"}
+  //                 onClick={() => handlePlansNavigation("/", "")}
+  //               >
+  //                 <OpenInNewIcon
+  //                   sx={{
+  //                     height: 14,
+  //                     width: 14,
+  //                     ml: 0.5,
+  //                     "&:hover": {
+  //                       cursor: "pointer",
+  //                     },
+  //                   }}
+  //                 />
+  //               </Box>
+  //             </Box>
+  //           ),
+  //         },
+  //         {
+  //           id: 4,
+  //           renderContent: (
+  //             <Box>
+  //               Data Migration
+  //               <Box
+  //                 component={"span"}
+  //                 onClick={() => handlePlansNavigation("/", "")}
+  //               >
+  //                 <OpenInNewIcon
+  //                   sx={{
+  //                     height: 14,
+  //                     width: 14,
+  //                     ml: 0.5,
+  //                     "&:hover": {
+  //                       cursor: "pointer",
+  //                     },
+  //                   }}
+  //                 />
+  //               </Box>
+  //             </Box>
+  //           ),
+  //         },
 
-          { id: 5, renderContent: "Mobile App (Ultimate)" },
-          { id: 6, renderContent: "Free Data Migration" },
-          { id: 7, renderContent: "Free Backup & Server Maintenance" },
-          { id: 8, renderContent: "End-to-End Training" },
-          { id: 9, renderContent: "Free Installation" },
-          { id: 10, renderContent: "24x7 Support" },
-        ],
-      },
-    },
-    {
-      title: "EDUMAAT Custom",
-      description:
-        "A fully personalized ERP built around your institution's unique needs",
-      description2: "Everything in Ultimate, plus:",
-      buttonText: "Get Free Quote",
-      highlight: true,
-      cardBodyContent: {
-        heading: "",
-        points: [
-          { id: 1, renderContent: "Custom Modules and Features" },
-          {
-            id: 2,
-            renderContent: (
-              <Box>
-                Integration with Biometric, RFID, Email, SMS, Payment Gateway{" "}
-                <Box
-                  component={"span"}
-                  onClick={() =>
-                    handlePlansNavigation(
-                      "/ai-automation/integration-payment-gateway-whatsapp-email",
-                      "ai-automation"
-                    )
-                  }
-                >
-                  <OpenInNewIcon
-                    sx={{
-                      height: 14,
-                      width: 14,
-                      "&:hover": {
-                        cursor: "pointer",
-                      },
-                    }}
-                  />
-                </Box>
-              </Box>
-            ),
-          },
-          {
-            id: 3,
-            renderContent: (
-              <Box>
-                Website Integration
-                <Box
-                  component={"span"}
-                  onClick={() => handlePlansNavigation("/", "")}
-                >
-                  <OpenInNewIcon
-                    sx={{
-                      height: 14,
-                      width: 14,
-                      ml: 0.5,
-                      "&:hover": {
-                        cursor: "pointer",
-                      },
-                    }}
-                  />
-                </Box>
-              </Box>
-            ),
-          },
-          {
-            id: 4,
-            renderContent: (
-              <Box>
-                Data Migration
-                <Box
-                  component={"span"}
-                  onClick={() => handlePlansNavigation("/", "")}
-                >
-                  <OpenInNewIcon
-                    sx={{
-                      height: 14,
-                      width: 14,
-                      ml: 0.5,
-                      "&:hover": {
-                        cursor: "pointer",
-                      },
-                    }}
-                  />
-                </Box>
-              </Box>
-            ),
-          },
+  //         { id: 5, renderContent: "Mobile App (Ultimate)" },
+  //         { id: 6, renderContent: "Free Data Migration" },
+  //         { id: 7, renderContent: "Free Backup & Server Maintenance" },
+  //         { id: 8, renderContent: "End-to-End Training" },
+  //         { id: 9, renderContent: "Free Installation" },
+  //         { id: 10, renderContent: "24x7 Support" },
+  //       ],
+  //     },
+  //   },
+  //   {
+  //     title: "EDUMAAT Custom",
+  //     description:
+  //       "A fully personalized ERP built around your institution's unique needs",
+  //     description2: "Everything in Ultimate, plus:",
+  //     buttonText: "Get Free Quote",
+  //     highlight: true,
+  //     cardBodyContent: {
+  //       heading: "",
+  //       points: [
+  //         { id: 1, renderContent: "Custom Modules and Features" },
+  //         {
+  //           id: 2,
+  //           renderContent: (
+  //             <Box>
+  //               Integration with Biometric, RFID, Email, SMS, Payment Gateway{" "}
+  //               <Box
+  //                 component={"span"}
+  //                 onClick={() =>
+  //                   handlePlansNavigation(
+  //                     "/ai-automation/integration-payment-gateway-whatsapp-email",
+  //                     "ai-automation"
+  //                   )
+  //                 }
+  //               >
+  //                 <OpenInNewIcon
+  //                   sx={{
+  //                     height: 14,
+  //                     width: 14,
+  //                     "&:hover": {
+  //                       cursor: "pointer",
+  //                     },
+  //                   }}
+  //                 />
+  //               </Box>
+  //             </Box>
+  //           ),
+  //         },
+  //         {
+  //           id: 3,
+  //           renderContent: (
+  //             <Box>
+  //               Website Integration
+  //               <Box
+  //                 component={"span"}
+  //                 onClick={() => handlePlansNavigation("/", "")}
+  //               >
+  //                 <OpenInNewIcon
+  //                   sx={{
+  //                     height: 14,
+  //                     width: 14,
+  //                     ml: 0.5,
+  //                     "&:hover": {
+  //                       cursor: "pointer",
+  //                     },
+  //                   }}
+  //                 />
+  //               </Box>
+  //             </Box>
+  //           ),
+  //         },
+  //         {
+  //           id: 4,
+  //           renderContent: (
+  //             <Box>
+  //               Data Migration
+  //               <Box
+  //                 component={"span"}
+  //                 onClick={() => handlePlansNavigation("/", "")}
+  //               >
+  //                 <OpenInNewIcon
+  //                   sx={{
+  //                     height: 14,
+  //                     width: 14,
+  //                     ml: 0.5,
+  //                     "&:hover": {
+  //                       cursor: "pointer",
+  //                     },
+  //                   }}
+  //                 />
+  //               </Box>
+  //             </Box>
+  //           ),
+  //         },
 
-          { id: 5, renderContent: "Mobile App (Ultimate)" },
-          { id: 6, renderContent: "Free Data Migration" },
-          { id: 7, renderContent: "Free Backup & Server Maintenance" },
-          { id: 8, renderContent: "End-to-End Training" },
-          { id: 9, renderContent: "Personalized Workflow Setup" },
-          { id: 10, renderContent: "Scalable to Fit Your Future Growth" },
-          { id: 11, renderContent: "24x7 Support" },
-        ],
-      },
-    },
-  ];
+  //         { id: 5, renderContent: "Mobile App (Ultimate)" },
+  //         { id: 6, renderContent: "Free Data Migration" },
+  //         { id: 7, renderContent: "Free Backup & Server Maintenance" },
+  //         { id: 8, renderContent: "End-to-End Training" },
+  //         { id: 9, renderContent: "Personalized Workflow Setup" },
+  //         { id: 10, renderContent: "Scalable to Fit Your Future Growth" },
+  //         { id: 11, renderContent: "24x7 Support" },
+  //       ],
+  //     },
+  //   },
+  // ];
 
   return (
     <div>

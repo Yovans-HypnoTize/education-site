@@ -36,7 +36,7 @@ const AwardsRecognition = () => {
       <meta name="author" content="Edumaat Team" />
       <link rel="canonical" href="https://edumaat.com/awards-recognition" />
 
-      <Box sx={{ px: { xs: 4, md: 22 }, mt: 13, mb: 10 }}>
+      <Box sx={{ px: { xs: 4, md: 22 }, mt: 3, mb: 10 }}>
         <Box sx={{ textAlign: "center" }}>
           <Typography sx={{ fontWeight: "bold", fontSize: 30, mb: 3 }}>
             Awards & Recognition

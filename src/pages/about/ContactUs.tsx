@@ -22,7 +22,7 @@ const ContactUs = () => {
         sx={{
           px: { xs: 2, md: 12 },
           mb: 5,
-          mt: 15,
+          mt: 3,
         }}
       >
         <Box sx={{ width: { xs: "100%", md: "50%" }, pr: { md: 10 } }}>

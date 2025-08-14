@@ -220,7 +220,8 @@ const HomeFeatureGrid = () => {
           display: { xs: "none", sm: "block" },
         }}
       >
-        <LazyBoxImage
+        <Box
+          component={"img"}
           src={activeFeature?.bottomImg || blurred_card_img}
           alt="Home Attendence Service"
           sx={{ height: "100%", width: "100vw" }}

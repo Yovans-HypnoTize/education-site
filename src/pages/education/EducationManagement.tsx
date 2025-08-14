@@ -1,19 +1,15 @@
 import { Box, Grid, Typography } from "@mui/material";
-import solutionSpotlightBannerImage from "../../assets/solutions-spotlight/solutionSpotlightBannerImage.png";
 import { useNavigate, useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import QueriesAccordion, {
   AccordionItem,
 } from "../../components/plans-pricing-components/QueriesAccordion";
-import plansPricingEssentialsImage from "../../assets/plans-pricing/plansPricingEssentialsImage.png";
 import ReuOutlineBorderedButton from "../../components/common-reusable-components/ReuOutlineBorderedButton";
-
 import school_k12 from "../../assets/education/schools_k12.png";
 import coaching_image from "../../assets/education/coaching.png";
 import collage_image from "../../assets/education/college.png";
 import education_boards_image from "../../assets/education/education_boards.png";
 import university_image from "../../assets/education/university.png";
-
 import header1_image from "../../assets/education/header1.png";
 import header2_image from "../../assets/education/header2.png";
 import header3_image from "../../assets/education/header3.png";

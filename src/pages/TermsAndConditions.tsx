@@ -9,7 +9,7 @@ const Title = ({ children }: any) => (
 
 const TermsAndConditions = () => {
   return (
-    <Box sx={{ mt: {xs:12, md:15}, mb: 10, px: {xs:6, md:18} }}>
+    <Box sx={{  mt: { xs: 1, md: 3 }, mb: 10, px: { xs:2,sm: 6, md: 18 } }}>
       <Box>
         <Typography sx={{ fontSize: 30, fontWeight: 600 }}>
           Terms and Conditions
